@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #E4D9D9, #8B6632);
+}
+
+header img {
+    width: 100%;
+    max-height: 200px
+}
+
+.container-fluid {
+    margin-top: 40px
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/**For random page url >> **/
+
+div>a#random {
+    color: #3235D4;
+    font-size: 28px;
+    margin: 20px 0px !important;
+}
+
+a#random:hover {
+    color: #696767;
+}
+
+button#search-icon {
+    font-size: 14px;
+    margin: 12px;
+    border: none;
+}
+
+a#close-btn {
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1F2220;
+}
+
+form #search-bar {
+    font-size: 18px;
+    border: 2px solid #CF4607;
+    background-color: #FFFFFE;
+    border-radius: 14px;
+    outline: none;
+    margin: 15px 0px;
+}
+
+#search-section {
+    display: none;
+    position: relative;
+}
+
+
+/* output */
+
+div#data div {
+    background-color: #6291AC;
+    margin: 8px;
+    border-radius: 14px;
+    padding: 4px;
+}
+
+div#data a {
+    display: block;
+    font-size: 24px;
+    padding: 4px;
+    color: #CF4607;
+}
+
+div#data a:hover {
+    color: rgb(133, 63, 42);
+}
+
+div#data div:hover {
+    box-shadow: 6px 8px 2px #312e2d;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+div#data div:last-child {
+    margin-bottom: 30px;
+}
+
+
+/*for each p in the div*/
+
+div#data div p {
+    font-size: 18px;
+    padding: 4px;
+    color: rgb(41, 43, 41);
+}
+
+
+/*Overlay and the loading effect*/
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(233, 233, 233, 0.568);
+}
+
+.wrapper {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+}
+
+#spinner {
+    border: 6px solid rgb(179, 179, 179);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border-top-color: #0c9b0c;
+    border-left-color: #0c9b0c;
+    animation: spin 0.7s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

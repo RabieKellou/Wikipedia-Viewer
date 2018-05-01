@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="wiki.png" alt="" class="img-responsive">
+    </header>
+    <div class="container-fluid text-center">
+        <div>
+            <a id="random" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get a random page</a>
+        </div>
+        <form class="form-inline col-sm-12">
+            <div class="form-group" id="search-section">
+                <input type="text" id="search-bar" placeholder="search an article..." class="form-control"><a type="button" id="close-btn">&times;</a>
+            </div>
+            <a type="button" id="search-icon" class="btn btn-primary"><span class=" glyphicon glyphicon-search"></span></a>
+
+        </form>
+    </div>
+    <div class="overlay">
+        <div class="wrapper">
+            <div id="spinner">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="data" class="container-fluid text-center">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js ">
+    </script>
+    <script src="wiki_search.js">
+    </script>
+</body>
+
+</html>
